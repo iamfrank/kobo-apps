@@ -1,5 +1,5 @@
+// Script is targeted towards Android 4 browser
+
 const showContent = function() {
-    let temp = document.getElementsByTagName("template")[0]
-    const clon = temp.content.cloneNode(true)
-    document.body.appendChild(clon)
+    document.getElementById("test").style.display = 'block'
 }
