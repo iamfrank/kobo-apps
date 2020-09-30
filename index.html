@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>KOBO test page</title>
-  </head>
-  <body>
-    <h1>Testing browser</h1>
-    <p id="info">No info yet</p>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>KOBO test page</title>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
 
-    <script>
-      var el = document.getElementById('info')
-      el.innerHTML = navigator.appName + ' ' + navigator.appVersion + '<br>' + navigator.product + '<br>' + navigator.userAgent + '<br>' + navigator.platform
-    </script>
-  </body>
+    <body>
+
+        <h1>Testing browser</h1>
+
+        <button onclick="showContent()">Show hidden content</button>
+
+        <template>
+            <h2>Flower</h2>
+            <img src="img_white_flower.jpg" width="214" height="204">
+        </template>
+
+        <script src="./js/main.js"></script>
+
+    </body>
 </html>
