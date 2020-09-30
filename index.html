@@ -10,9 +10,10 @@
 
     <body>
 
-        <h1>Testing browser 2</h1>
+        <h1>Testing browser 12</h1>
+        <a href="otherpage.html">Link to another page</a>
 
-        <button onclick="showContent()">Show hidden content</button>
+        <button type="button" onclick="showContent()">Show hidden content</button>
 
         <div id="test" style="display: none;">
             <h2>Test</h2>
@@ -22,7 +23,15 @@
 
         </section>
 
-        <script src="./js/main.js"></script>
+        <template id="template">
+            <h2>This is a template</h2>
+        </template>
+
+        <div id="template2">
+            <h2>This is a another template</h2>
+        </div>
+
+        <script src="./dist/main.js"></script>
 
     </body>
 </html>
