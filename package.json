@@ -2,10 +2,10 @@
     "name": "kobo-apps",
     "version": "1.0.0",
     "description": "Testrepo for checking out kobo browser features",
-    "main": "index.js",
+    "main": "./js/main.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "babel js -d dist"
+        "build": "webpack --config webpack.config.js"
     },
     "repository": {
         "type": "git",
@@ -19,9 +19,11 @@
     },
     "homepage": "https://github.com/iamfrank/kobo-apps#readme",
     "devDependencies": {
-        "@babel/cli": "^7.11.6",
         "@babel/core": "^7.11.6",
-        "@babel/preset-env": "^7.11.5"
+        "@babel/preset-env": "^7.11.5",
+        "babel-loader": "^8.1.0",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12"
     },
     "dependencies": {
         "core-js": "^3.6.5"

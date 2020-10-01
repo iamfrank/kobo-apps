@@ -11,11 +11,13 @@ let colorpicker_template =  `
             </div>
         </div>
     </div>
-`
+    `
 
 const showContent = function() {
     document.getElementById("test").style.display = 'block'
-    
-    document.body.appendChild(colorpicker_template);
-  
+    let el = document.createElement('div')
+    el.innerHTML = colorpicker_template
+    document.body.appendChild(el)
 }
+
+window.displayContent = showContent
